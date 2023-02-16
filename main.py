@@ -2,6 +2,7 @@ import sys
 from convert import *
 from calc import calculate
 from validation import check_before_parsing, validate_parenthesis, validate_spacing
+import syslog
 
 def main():
 
