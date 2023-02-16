@@ -13,7 +13,9 @@ def main():
         return
 
     if user_input[1].isdigit():
-        return user_input[1]
+        result = user_input[1]
+        print(result)
+        return
 
     if not check_before_parsing(user_input[1]):
         return

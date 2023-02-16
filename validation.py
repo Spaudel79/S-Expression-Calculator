@@ -61,6 +61,7 @@ def validate_parenthesis(expr_list):
         if char == ")":
             count -= 1
             if count < 0:
+                print("missing opening or closed parantheses")
                 return False
 
     if count != 0:
