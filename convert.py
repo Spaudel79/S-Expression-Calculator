@@ -6,8 +6,8 @@ class ParseExpression:
         self.input_string = input_string
 
     def convert(self):
-        s = self.input_string
 
+        s = self.input_string
         if self.input_string == '':
             return None
 
