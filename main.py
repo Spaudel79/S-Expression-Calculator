@@ -2,14 +2,14 @@ import sys
 from convert import *
 from calc import calculate
 from validation import check_before_parsing, validate_parenthesis, validate_spacing
-import syslog
+
 
 def main():
 
     user_input = sys.argv
 
     if len(user_input) < 2:
-        print('No expression in input!')
+        print("No expression in input!")
         return
 
     if user_input[1].isdigit():
@@ -26,8 +26,8 @@ def main():
 
     expr = ParseExpression(sys.argv[1]).convert()
 
-    print("The output is:",calculate(expr))
+    print("The output is:", calculate(expr))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
